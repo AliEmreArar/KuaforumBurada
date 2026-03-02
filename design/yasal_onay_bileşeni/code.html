@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yasal Onay Bileşeni</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#FF69B4", // Modified as per user request
+            "background-light": "#F5F5F5", // Modified as per user request
+            "background-dark": "#101c22",
+            "text-light": "#333333", // Added for light mode text
+            "text-dark": "#E0E0E0", // Added for dark mode text
+            "border-light": "#E0E0E0", // Added for light mode borders
+            "border-dark": "#4A4A4A", // Added for dark mode borders
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"}, // Modified for a softer iOS look
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');">
+<div class="flex-1 p-6 flex flex-col justify-end">
+<!-- Legal Consent Component Starts Here -->
+<div class="w-full max-w-md mx-auto space-y-4">
+<!-- Divider Line -->
+<div class="h-px bg-border-light dark:bg-border-dark"></div>
+<!-- ListItem modified for checkbox -->
+<div class="flex items-start gap-3 bg-transparent">
+<div class="flex size-7 items-center justify-center mt-0.5 shrink-0">
+<input class="h-6 w-6 rounded border-border-light dark:border-border-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-border-light dark:focus:border-border-dark focus:outline-none transition-colors duration-200" id="legal-consent-checkbox" type="checkbox"/>
+</div>
+<label class="text-text-light dark:text-text-dark text-base font-normal leading-normal" for="legal-consent-checkbox">Okudum ve onayladım</label>
+</div>
+<!-- BodyText modified for legal disclaimer -->
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-relaxed">
+        Kaydolarak, <a class="text-primary font-medium hover:underline" href="#">Kullanıcı Sözleşmesi</a>'ni ve <a class="text-primary font-medium hover:underline" href="#">KVKK Aydınlatma Metni</a>'ni kabul etmiş olursunuz.
+      </p>
+<!-- SingleButton modified for enabled state -->
+<div class="pt-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-sm hover:opacity-90 transition-opacity">
+<span class="truncate">Register</span>
+</button>
+</div>
+<!-- SingleButton modified for disabled state -->
+<div class="pt-2">
+<button class="flex w-full cursor-not-allowed items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 text-base font-bold leading-normal tracking-[0.015em]" disabled="">
+<span class="truncate">Register</span>
+</button>
+</div>
+</div>
+<!-- Legal Consent Component Ends Here -->
+</div>
+</div>
+</body></html>

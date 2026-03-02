@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anasayfa/Salon Listesi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-background-light dark:bg-background-dark">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-[#111618] dark:text-white flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<h2 class="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Beşiktaş, İstanbul</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111618] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-3xl">map</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="px-4 py-3 bg-background-light dark:bg-background-dark">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#617c89] flex border-none bg-white dark:bg-background-dark dark:border dark:border-white/10 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] dark:text-white focus:outline-0 focus:ring-0 border-none bg-white dark:bg-background-dark dark:border dark:border-white/10 focus:border-none h-full placeholder:text-[#617c89] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Salon veya hizmet ara" value=""/>
+</div>
+</label>
+</div>
+<div class="bg-background-light dark:bg-background-dark">
+<div class="flex gap-3 p-3 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
+<style>
+                        .hide-scrollbar::-webkit-scrollbar {
+                            display: none;
+                        }
+                    </style>
+<div class="flex gap-3 hide-scrollbar">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary text-white pl-4 pr-2">
+<p class="text-sm font-medium leading-normal">Sıralama</p>
+<span class="material-symbols-outlined text-lg">arrow_drop_down</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-white/10 pl-4 pr-2">
+<p class="text-[#111618] dark:text-white text-sm font-medium leading-normal">Fiyat</p>
+<span class="material-symbols-outlined text-lg text-[#111618] dark:text-white">arrow_drop_down</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-white/10 pl-4 pr-2">
+<p class="text-[#111618] dark:text-white text-sm font-medium leading-normal">Mesafe</p>
+<span class="material-symbols-outlined text-lg text-[#111618] dark:text-white">arrow_drop_down</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-white/10 pl-4 pr-2">
+<p class="text-[#111618] dark:text-white text-sm font-medium leading-normal">Hizmet Türü</p>
+<span class="material-symbols-outlined text-lg text-[#111618] dark:text-white">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4 pt-2">
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-black/20 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none overflow-hidden">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" data-alt="Modern and bright interior of a barber shop with stylish chairs." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9Jj1bOW2mIFUNbfu_S2xjeed_Etft1nwylEYqW_bpqp9w9WCmHl1DSepxutMjdguFjMuAKat10MX53uY-t365n2um_a_VL6dKtm8P_bFYYrnFoqeCwnmQP7xIsg7CqsTxSXvWvon5L86ifr4a5vgTgjJR6W2xIug3MaJ8DFWUH7tG855uF-TVSLVn-_YPawl7DtI6MsU50wgVM0MZjegNNB5WpIuEKnFXa6Qz1826MJEjnCgfpp51FtoTbEuzQozVo--DXJ0jgEQ");'></div>
+<div class="flex items-start justify-between gap-4 p-4 pt-0">
+<div class="flex flex-col gap-1.5 flex-1">
+<p class="text-[#111618] dark:text-white text-base font-bold leading-tight">Modern Erkek Kuaförü</p>
+<div class="flex items-center gap-1 text-[#617c89] dark:text-white/70 text-sm font-normal leading-normal">
+<span class="material-symbols-outlined text-base text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8 (150+) ・ ~1.2 km ・ $$</span>
+</div>
+</div>
+<button class="text-[#111618] dark:text-white">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-black/20 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none overflow-hidden">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" data-alt="Luxurious and elegant interior of a beauty salon with pink and gold accents." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4WF20HRgUSKYF0P10U5p0g-WbZxi1RlUPI7pwWBDMYUpZrvi6G2pZJ8bzhFdjINo9JhvnTh8NemyC8g746-wt7nzyD-Q-o1qeu0U-DLu5emZkkRedapxo06MLEsovvLjSxOZ2xU8RrjAL_1sOJ3OA6JYZoovvYoqVw0_hW5CzPkuzYDQD7MxoziFcRziY6GEGz97b1asR8h_5CCq4kUqVSXwveFW-lz1Hgf7vIUzNF77NH4uA84SPXZ7PyrmoypcjtfhvgsYxmIk");'></div>
+<div class="flex items-start justify-between gap-4 p-4 pt-0">
+<div class="flex flex-col gap-1.5 flex-1">
+<p class="text-[#111618] dark:text-white text-base font-bold leading-tight">Beauty Palace</p>
+<div class="flex items-center gap-1 text-[#617c89] dark:text-white/70 text-sm font-normal leading-normal">
+<span class="material-symbols-outlined text-base text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (210+) ・ ~0.8 km ・ $$$</span>
+</div>
+</div>
+<button class="text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-black/20 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none overflow-hidden">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" data-alt="A chic hair salon with minimalist decor and large mirrors." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4zMc3Mvz_L7XhKa8daPGcCQZFyYoAmv90A5QQKTLkcQSM686TXU8EDk0gABaeJ9A84r8xxx6IQiS65CeQoIHq2qyyVtkmnWDkVRkZdVEiQ9X6RXypG1N9aDMrKEuJ05G3pHr0e05IahdvsjlXRSerUoF25Mz5OyNR0b96OkOQoczuE3TbKzI7MgCGmIROBgGINoL0UKC34-2madnu2hWEXVNd0_xHDol-kSAh85GNvrKQrFYAFHaG5A20R8JcfqBAJbp-1fX7qB0");'></div>
+<div class="flex items-start justify-between gap-4 p-4 pt-0">
+<div class="flex flex-col gap-1.5 flex-1">
+<p class="text-[#111618] dark:text-white text-base font-bold leading-tight">The Hair Lab</p>
+<div class="flex items-center gap-1 text-[#617c89] dark:text-white/70 text-sm font-normal leading-normal">
+<span class="material-symbols-outlined text-base text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7 (95+) ・ ~2.5 km ・ $$</span>
+</div>
+</div>
+<button class="text-[#111618] dark:text-white">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<nav class="sticky bottom-0 z-10 bg-white dark:bg-[#1C2930] border-t border-gray-200 dark:border-white/10 p-2">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center text-primary w-1/5" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-xs font-medium">Anasayfa</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">palette</span>
+<span class="text-xs font-medium">Tasarımlar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-xs font-medium">Randevular</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-xs font-medium">Favoriler</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profil</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

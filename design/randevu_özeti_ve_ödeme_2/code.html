@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Randevu Özeti ve Ödeme</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#14b8a6", // New Turquoise color
+              "background-light": "#f8fafc", // Lighter gray for cleaner look
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Inter", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .material-symbols-outlined.fill-1 {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-zinc-200 dark:border-zinc-800">
+<div class="flex items-center p-4 pb-3">
+<button class="text-zinc-800 dark:text-zinc-200 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-zinc-900 dark:text-zinc-100 text-lg font-semibold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Randevu Özeti ve Ödeme</h1>
+</div>
+</header>
+<main class="flex-1 pb-32">
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.05)] bg-white dark:bg-zinc-900">
+<div class="flex items-start gap-4 p-4">
+<div class="w-24 h-24 bg-center bg-no-repeat aspect-square bg-cover rounded-lg shrink-0" data-alt="Glamour Hair Studio salon front" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMLEQ0o_XC2Gt_W2PJp7xfBVm7YI-i6G5GgGDHEUxreNxdFW8f3QU4GO5sLHRRaFVVD1jpF-w_rgBNazrCdxzIY0ijU7hyur5MUv3m-c5UOXmJjcL-Ymco9J6Z6_rloVodmmJ_L3T9pf8-EnP65GfpfvGEcAdKDfYwMJsuIEEjtvyvKmRvwHUb0gw-AsCSVGOkKowvITiVekXbt1fxt00yeuf3u8CV_xZQVyb0kwuX4ZEGaElU3yOi_E4y_udhAbwTXQzlylwji6Q");'></div>
+<div class="flex w-full min-w-0 grow flex-col items-stretch justify-center gap-1 py-1">
+<p class="text-zinc-900 dark:text-zinc-100 text-lg font-semibold leading-tight tracking-[-0.015em]">Glamour Hair Studio</p>
+<div class="flex flex-col gap-1.5 mt-1">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">123 Beauty Lane, Istanbul</p>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">15 Ekim Salı, 14:30</p>
+</div>
+</div>
+</div>
+<div class="px-4 pb-2 grid grid-cols-[1fr_auto] gap-x-6">
+<div class="col-span-2 grid grid-cols-subgrid border-t border-t-zinc-200 dark:border-t-zinc-800 py-4">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Saç Kesimi</p>
+<p class="text-zinc-800 dark:text-zinc-200 text-sm font-normal leading-normal text-right">₺250</p>
+</div>
+<div class="col-span-2 grid grid-cols-subgrid border-t border-t-zinc-200 dark:border-t-zinc-800 py-4">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Manikür</p>
+<p class="text-zinc-800 dark:text-zinc-200 text-sm font-normal leading-normal text-right">₺150</p>
+</div>
+<div class="col-span-2 grid grid-cols-subgrid border-t border-t-zinc-200 dark:border-t-zinc-800 py-4">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Uzman</p>
+<p class="text-zinc-800 dark:text-zinc-200 text-sm font-normal leading-normal text-right">Ayşe Yılmaz</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 mt-4">
+<h3 class="text-zinc-900 dark:text-zinc-100 text-lg font-semibold leading-tight tracking-[-0.015em] px-0 pb-2">Fiyatlandırma</h3>
+<div class="p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+<div class="flex justify-between gap-x-6 py-2">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Ara Toplam</p>
+<p class="text-zinc-800 dark:text-zinc-200 text-sm font-normal leading-normal text-right">₺400</p>
+</div>
+<div class="flex justify-between gap-x-6 py-2">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">İndirim</p>
+<p class="text-zinc-800 dark:text-zinc-200 text-sm font-normal leading-normal text-right">-₺0</p>
+</div>
+<div class="flex justify-between gap-x-6 pt-4 mt-2 border-t border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-900 dark:text-zinc-100 text-base font-bold leading-normal">Toplam Tutar</p>
+<p class="text-primary dark:text-primary text-base font-bold leading-normal text-right">₺400</p>
+</div>
+</div>
+</div>
+<div class="px-4 mt-8">
+<h3 class="text-zinc-900 dark:text-zinc-100 text-lg font-semibold leading-tight tracking-[-0.015em] px-0 pb-2">Ödeme Yöntemi</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.05)] has-[:checked]:ring-2 has-[:checked]:ring-primary dark:has-[:checked]:ring-primary transition-shadow cursor-pointer" for="payment-card">
+<input checked="" class="size-5 border-zinc-300 text-primary focus:ring-primary dark:bg-zinc-700 dark:border-zinc-600" id="payment-card" name="payment_method" type="radio" value="card"/>
+<span class="material-symbols-outlined text-2xl text-zinc-500 dark:text-zinc-400">credit_card</span>
+<div class="flex-1">
+<p class="font-medium text-zinc-800 dark:text-zinc-200">VISA **** 1234</p>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">Son Kullanma: 12/26</p>
+</div>
+<span class="material-symbols-outlined text-2xl text-primary">check_circle</span>
+</label>
+<button class="w-full flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
+<span class="material-symbols-outlined text-2xl text-zinc-500 dark:text-zinc-400">add_card</span>
+<p class="flex-1 text-left font-medium text-zinc-800 dark:text-zinc-200">Yeni Kart Ekle</p>
+<span class="material-symbols-outlined text-2xl text-zinc-400 dark:text-zinc-500">chevron_right</span>
+</button>
+<label class="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.05)] has-[:checked]:ring-2 has-[:checked]:ring-primary dark:has-[:checked]:ring-primary transition-shadow cursor-pointer" for="payment-salon">
+<input class="size-5 border-zinc-300 text-primary focus:ring-primary dark:bg-zinc-700 dark:border-zinc-600" id="payment-salon" name="payment_method" type="radio" value="salon"/>
+<span class="material-symbols-outlined text-2xl text-zinc-500 dark:text-zinc-400">storefront</span>
+<p class="flex-1 font-medium text-zinc-800 dark:text-zinc-200">Salonda Öde</p>
+</label>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-10">
+<div class="bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-zinc-200 dark:border-zinc-800">
+<div class="p-4 space-y-3">
+<button class="w-full h-12 flex items-center justify-center rounded-full bg-primary text-white font-bold text-base hover:bg-primary/90 transition-colors active:scale-95">Ödemeyi Tamamla ve Onayla</button>
+<p class="text-center text-xs text-zinc-500 dark:text-zinc-400 px-4"> Onaylayarak <a class="underline text-primary" href="#">Hizmet Sözleşmesi</a> ve <a class="underline text-primary" href="#">İptal Politikası</a>'nı kabul etmiş olursunuz. </p>
+</div>
+</div>
+<nav class="bg-white/95 dark:bg-zinc-900/95 backdrop-blur-sm border-t border-zinc-200 dark:border-zinc-800">
+<div class="mx-auto flex h-20 max-w-md items-center justify-around px-2">
+<a class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-xs font-medium">Keşfet</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined fill-1">calendar_month</span>
+<span class="text-xs font-bold">Randevular</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">palette</span>
+<span class="text-xs font-medium">Tasarımlar</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-xs font-medium">Favoriler</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profil</span>
+</a>
+</div>
+</nav>
+</div>
+</div>
+</body></html>

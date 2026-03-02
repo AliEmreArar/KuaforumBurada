@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dükkan Sahibi Kontrol Paneli</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2C7A7B",
+              "background-light": "#F7FAFC",
+              "background-dark": "#2D3748",
+              "text-light": "#2D3748",
+              "text-dark": "#F7FAFC",
+              "card-light": "#FFFFFF",
+              "card-dark": "#4A5568",
+              "subtext-light": "#718096",
+              "subtext-dark": "#A0AEC0",
+              "border-light": "#E2E8F0",
+              "border-dark": "#718096",
+              "accent": "#DD6B20"
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="flex flex-col gap-2 bg-background-light dark:bg-background-dark p-4 pb-2 sticky top-0 z-10 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center h-12 justify-between">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-start" data-alt="Placeholder for a logo or menu icon">
+<span class="material-symbols-outlined text-3xl">store</span>
+</div>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-text-light dark:text-text-dark gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-3xl">account_circle</span>
+</button>
+</div>
+</div>
+<h1 class="text-text-light dark:text-text-dark tracking-tight text-[32px] font-bold leading-tight">Kuaför Salonu</h1>
+</header>
+<main class="flex-grow p-4 space-y-8">
+<!-- Services Section -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-0 pb-3">Hizmetleriniz</h2>
+<div class="space-y-3">
+<!-- Service Item 1 -->
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[72px] justify-between rounded-lg shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-full bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined">content_cut</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Saç Kesim</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">45 dk</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal">350 TL</p></div>
+</div>
+<!-- Service Item 2 -->
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[72px] justify-between rounded-lg shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-full bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined">styler</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Sakal Traşı</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">20 dk</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal">150 TL</p></div>
+</div>
+<!-- Service Item 3 -->
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[72px] justify-between rounded-lg shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-full bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Manikür</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">30 dk</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-light dark:text-text-dark text-base font-semibold leading-normal">250 TL</p></div>
+</div>
+</div>
+</section>
+<!-- Empty State Example (commented out, for reference) -->
+<!--
+            <section>
+                <h2 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-0 pb-3">Hizmetleriniz</h2>
+                <div class="text-center py-10 px-6 bg-card-light dark:bg-card-dark rounded-lg shadow-sm border border-dashed border-border-light dark:border-border-dark">
+                    <div class="mx-auto text-primary bg-primary/20 rounded-full size-16 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-4xl">add_circle</span>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold text-text-light dark:text-text-dark">Henüz hiç hizmet eklemediniz.</h3>
+                    <p class="mt-1 text-sm text-subtext-light dark:text-subtext-dark">Müşterilerinize sunduğunuz hizmetleri ekleyerek başlayın.</p>
+                    <div class="mt-6">
+                        <button class="flex items-center justify-center gap-2 bg-primary text-white font-bold text-base leading-normal px-6 py-3 rounded-lg w-full sm:w-auto mx-auto">
+                            <span class="material-symbols-outlined">add</span>
+                            <span>İlk Hizmetini Ekle</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            -->
+<!-- Profile Management Section -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-0 pb-3">Mağaza Bilgileri</h2>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-sm space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<div class="flex-1">
+<h3 class="text-text-light dark:text-text-dark font-semibold">Profilinizi Güncel Tutun</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm mt-1">İletişim bilgilerinizi, çalışma saatlerinizi ve fotoğraflarınızı düzenleyerek müşterilerinize en doğru bilgiyi sunun.</p>
+</div>
+</div>
+<button class="flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-5 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-accent/90">
+<span class="material-symbols-outlined">edit</span>
+<span>Profili Düzenle</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Floating Action Button for Adding Service -->
+<div class="fixed bottom-6 right-6 z-20">
+<button class="flex size-14 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-3xl">add</span>
+<span class="sr-only">Yeni Hizmet Ekle</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş/Rol Seçim Ekranı - KuaförSepeti</title>
+
+    <!-- Tailwind CSS and Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- React Libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/history@5/umd/history.development.js"></script>
+    <script src="https://unpkg.com/react-router@6.3.0/umd/react-router.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6.3.0/umd/react-router-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+            min-height: max(884px, 100dvh);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display">
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        const { createRoot } = ReactDOM;
+        const { MemoryRouter, Routes, Route, Link, useNavigate } = ReactRouterDOM;
+
+        // Components
+        const RoleCard = ({ icon, title, description, linkTo }) => {
+            return (
+                <div className="p-2 w-full @container">
+                    <div className="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-[0_0_8px_rgba(0,0,0,0.08)] bg-white dark:bg-background-dark/50 dark:border dark:border-white/10">
+                        <div className="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 py-4 px-4">
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 bg-primary/20 dark:bg-primary/30 rounded-full flex items-center justify-center shrink-0">
+                                    <span className="material-symbols-outlined text-primary dark:text-sky-300">
+                                        {icon}
+                                    </span>
+                                </div>
+                                <div className="flex-grow">
+                                    <p className="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">{title}</p>
+                                    <p className="text-[#617c89] dark:text-gray-300 text-base font-normal leading-normal">{description}</p>
+                                </div>
+                                <Link to={linkTo} className="flex min-w-10 max-w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-primary text-white text-sm font-medium leading-normal ml-auto shrink-0">
+                                    <span className="material-symbols-outlined">
+                                        arrow_forward_ios
+                                    </span>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        // Screen Component
+        const RoleSelectionPage = () => {
+            return (
+                <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+                    <div className="flex flex-col items-center justify-center p-4 min-h-screen">
+                        <div className="flex flex-col items-center gap-4 w-full max-w-md">
+                            {/* Logo Placeholder */}
+                            <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-4">
+                                <span className="material-symbols-outlined text-white" style={{ fontSize: '36px' }}>
+                                    content_cut
+                                </span>
+                            </div>
+                            {/* HeadlineText */}
+                            <h1 className="text-[#111618] dark:text-white tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-1">KuaförSepeti'ne Hoş Geldin!</h1>
+                            {/* BodyText */}
+                            <p className="text-[#617c89] dark:text-gray-300 text-base font-normal leading-normal pb-6 px-4 text-center">Sana nasıl yardımcı olabiliriz?</p>
+                            
+                            {/* Card: Dükkan Sahibi */}
+                            <RoleCard 
+                                icon="storefront"
+                                title="Dükkan Sahibiyim"
+                                description="İşletmeni yönet ve yeni müşteriler kazan."
+                                linkTo="/shop-owner"
+                            />
+                            
+                            {/* Card: Müşteri */}
+                            <RoleCard 
+                                icon="person"
+                                title="Müşteriyim"
+                                description="En iyi kuaför ve güzellik servislerini keşfet."
+                                linkTo="/customer"
+                            />
+                        </div>
+                        {/* MetaText */}
+                        <div className="absolute bottom-10">
+                            <p className="text-[#617c89] dark:text-gray-400 text-sm font-normal leading-normal px-4 text-center">
+                                Zaten hesabın var mı? <Link to="/login" className="font-bold text-primary dark:text-sky-400 underline">Giriş Yap</Link>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        // Main App Component
+        const App = () => {
+            // Dark mode toggle logic for demonstration
+            useEffect(() => {
+                // Set the default theme based on user's OS preference
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            }, []);
+
+            return (
+                <MemoryRouter>
+                    <Routes>
+                        <Route path="/" element={<RoleSelectionPage />} />
+                        {/* Define other routes here if more screens are added */}
+                        {/* e.g., <Route path="/login" element={<LoginPage />} /> */}
+                    </Routes>
+                </MemoryRouter>
+            );
+        };
+
+        // Render the application
+        const container = document.getElementById('root');
+        const root = createRoot(container);
+        root.render(<App />);
+    </script>
+
+</body>
+</html>

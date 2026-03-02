@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anasayfa/Salon Listesi (Salon Logoları ile)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00C7B0",
+            "turquoise-primary": "#00C7B0",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-turquoise-primary/10 via-transparent to-turquoise-primary/10 blur-3xl pointer-events-none"></div>
+<header class="sticky top-0 z-10 bg-background-light dark:bg-background-dark">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-[#111618] dark:text-white flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<h2 class="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Beşiktaş, İstanbul</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111618] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-3xl">map</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="px-4 py-3 bg-background-light dark:bg-background-dark">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-white dark:bg-background-dark dark:border dark:border-white/10">
+<div class="text-[#617c89] flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#111618] dark:text-white focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-[#617c89] px-2 text-base font-normal leading-normal" placeholder="Bugün nerede parlıyorsun?" value=""/>
+<button class="flex items-center justify-center pr-4 text-turquoise-primary">
+<span class="material-symbols-outlined text-2xl">mic</span>
+</button>
+</div>
+</label>
+<div class="flex items-center justify-center pt-2.5">
+<p class="text-sm font-medium text-turquoise-primary">Kuaför veya hizmet adını söyleyin...</p>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark">
+<div class="flex gap-3 p-3 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
+<style>
+            .hide-scrollbar::-webkit-scrollbar {
+              display: none;
+            }
+          </style>
+<div class="flex gap-3 hide-scrollbar">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-turquoise-primary text-white pl-4 pr-2">
+<p class="text-sm font-medium leading-normal">Sıralama</p>
+<span class="material-symbols-outlined text-lg">arrow_drop_down</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-white/10 pl-4 pr-2">
+<p class="text-[#111618] dark:text-white text-sm font-medium leading-normal">Fiyat</p>
+<span class="material-symbols-outlined text-lg text-[#111618] dark:text-white">arrow_drop_down</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-white/10 pl-4 pr-2">
+<p class="text-[#111618] dark:text-white text-sm font-medium leading-normal">Mesafe</p>
+<span class="material-symbols-outlined text-lg text-[#111618] dark:text-white">arrow_drop_down</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-white/10 pl-4 pr-2">
+<p class="text-[#111618] dark:text-white text-sm font-medium leading-normal">Hizmet Türü</p>
+<span class="material-symbols-outlined text-lg text-[#111618] dark:text-white">arrow_drop_down</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-white/10 px-4">
+<p class="text-[#111618] dark:text-white text-sm font-medium leading-normal">Gelin Başı ve Makyaj</p>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark px-4 pb-3">
+<div class="grid grid-cols-3 gap-3">
+<button class="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-turquoise-primary text-white font-bold shadow-sm">
+<svg class="w-7 h-7 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M15.602 3.25C17.1652 3.25 18.5361 4.20455 19.1417 5.625H21.75C21.9158 5.625 22.0542 5.7634 22.0542 5.92917C22.0542 6.09493 21.9158 6.23333 21.75 6.23333H19.5398C19.232 8.79434 17.653 10.9712 15.542 12.0167C15.6565 12.3333 15.75 12.6667 15.75 13C15.75 13.9319 15.3946 14.7989 14.7891 15.4044C15.9388 15.894 17.2023 16.6586 18.2505 17.75C19.7824 19.3417 20.3065 20.75 20.15 21.6583C20.0435 22.2833 19.463 22.75 18.8 22.75H5.19999C4.53695 22.75 3.95651 22.2833 3.84999 21.6583C3.69348 20.75 4.2176 19.3417 5.74949 17.75C6.79769 16.6586 8.06122 15.894 9.21086 15.4044C8.60535 14.7989 8.25 13.9319 8.25 13C8.25 12.6667 8.3435 12.3333 8.45803 12.0167C6.34704 10.9712 4.76798 8.79434 4.46019 6.23333H2.25C2.08424 6.23333 1.94583 6.09493 1.94583 5.92917C1.94583 5.7634 2.08424 5.625 2.25 5.625H4.85828C5.46394 4.20455 6.83477 3.25 8.39791 3.25H15.6021H15.602ZM11.5 13C11.5 11.2542 10.4292 9.75 8.95416 9.75C7.47916 9.75 6.40833 11.2542 6.40833 13C6.40833 14.7458 7.47916 16.25 8.95416 16.25C10.4292 16.25 11.5 14.7458 11.5 13Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+<span>KADIN</span>
+</button>
+<button class="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-white dark:bg-black/20 text-[#111618] dark:text-white font-bold shadow-sm">
+<svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.25 6.5C17.25 8.01878 15.9876 9.25 14.4375 9.25C12.8874 9.25 11.625 8.01878 11.625 6.5C11.625 4.98122 12.8874 3.75 14.4375 3.75C15.9876 3.75 17.25 4.98122 17.25 6.5Z"></path>
+<path d="M19.75 12.6393C19.75 11.7001 19.313 10.8242 18.5714 10.2311C18.1755 9.91414 17.6975 9.75 17.1991 9.75H11.6759C11.1775 9.75 10.6995 9.91414 10.3036 10.2311C9.56102 10.8242 9.125 11.7001 9.125 12.6393V13.25H4.25V18.25C4.25 19.4926 5.25736 20.5 6.5 20.5H16.75C17.9926 20.5 19 19.4926 19 18.25V13.25H19.75V12.6393Z"></path>
+</svg>
+<span>ERKEK</span>
+</button>
+<button class="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-white dark:bg-black/20 text-[#111618] dark:text-white font-bold shadow-sm">
+<svg class="w-7 h-7 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.993 11.02a2.38 2.38 0 0 0-1.74-1.232c-.93-.242-1.92-.02-2.73.54-1.2 1.04-1.57 2.72-1.02 4.13.75 1.9 2.53 3.12 4.54 3.12 1.34 0 2.59-.62 3.42-1.63a3.869 3.869 0 0 0 .9-3.41c-.4-1.6-1.7-2.7-3.37-2.52ZM4.007 11.02c1.67-.18 3 .92 3.37 2.52.4 1.54-.1 3.12-.9 4.13-.83 1.01-2.08 1.63-3.42 1.63-2.01 0-3.79-1.22-4.54-3.12-.55-1.4.18-3.09 1.02-4.13.81-.56 1.8-.782 2.73-.54a2.38 2.38 0 0 1 1.74 1.232Zm8.711-7.16c-1.78.2-3.23 1.4-3.8 3.01-.51 1.48.1 3.12 1.01 4.19.89 1.09 2.25 1.77 3.7 1.77 2.18 0 4.07-1.3 4.79-3.32.7-1.93-.04-4.1-1.57-5.32-1.01-.81-2.28-1.07-3.48-.84l-.65.08ZM11.17 7.9c.56-1.61 2.01-2.81 3.8-3.01l.65-.08c1.2-.23 2.47.03 3.48.84 1.53 1.22 2.27 3.39 1.57 5.32-.72 2.02-2.61 3.32-4.79 3.32-1.45 0-2.81-.68-3.7-1.77-1.2-1.46-1.52-3.18-1.01-4.69Z"></path>
+</svg>
+<span>EVCİL HAYVAN</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4 pt-1">
+<div class="relative flex flex-col items-start justify-end rounded-xl bg-gradient-to-t from-black/70 to-black/0 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none overflow-hidden h-48 w-full">
+<div class="absolute inset-0 w-full h-full bg-center bg-no-repeat bg-cover -z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcZXNlhU7Vroh3VLjBiQGBl6ikLWUsSzU0aYGflQw4OawwiFKqH5mjRbf32cSl1Q1q2pKSyxiaQ4fgJslLwgh8l7vy369Z9ZhCnzVHuqUZ2jREC72vUiPUO2MoT_lj9QD65DFww99rvHJqm9prVD5kvmmkFqLi9fjviqge-9gwef1IAMrDaTNjbY0HCovQ2z2IPi7AcQlhXMDpuLDA4Bshe6UPnMbGBkji00eWWZ61g1MywqwJqj38nyp_bRJyUYW0jR_8xlpKmU4");'></div>
+<div class="p-4 text-white w-full">
+<h3 class="text-lg font-bold leading-tight">Tesettür Özel Kuaför</h3>
+<p class="text-sm font-medium leading-normal text-white/90">Yalnızca Bayan Personel Hizmet Vermektedir</p>
+</div>
+</div>
+<div class="flex flex-col gap-0 rounded-xl bg-white dark:bg-black/20 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none overflow-hidden">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" data-alt="Luxurious and elegant interior of a beauty salon with pink and gold accents." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4WF20HRgUSKYF0P10U5p0g-WbZxi1RlUPI7pwWBDMYUpZrvi6G2pZJ8bzhFdjINo9JhvnTh8NemyC8g746-wt7nzyD-Q-o1qeu0U-DLu5emZkkRedapxo06MLEsovvLjSxOZ2xU8RrjAL_1sOJ3OA6JYZoovvYoqVw0_hW5CzPkuzYDQD7MxoziFcRziY6GEGz97b1asR8h_5CCq4kUqVSXwveFW-lz1Hgf7vIUzNF77NH4uA84SPXZ7PyrmoypcjtfhvgsYxmIk");'></div>
+<div class="flex items-start justify-between gap-4 p-4">
+<img alt="Beauty Palace Logo" class="h-14 w-14 rounded-full object-cover border-2 border-white dark:border-gray-800 shadow-md -mt-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTa38PuBP3ABJm07cVm6qwWBt8DsDh-huiOrfhWa0ngeBZw3X_pG39aKsNYYSBXlyLQPuwypNbj8LhvyiKL7Zawfu8USeCkh95mmkvEv1_VVFEFCQzXj7dytOEuMj6F8ANXn1-bVDLMu2XiltZS_1rx-piDHZJF6Y_TfQVdxv7hUGv7IAPsg3VTXuvULr1S6y-nQZF8_0pM9sj0K6VmyVcnZKI7vlM-m7BhLyPhOeoWYhrpI8aWzwvbLtk_PjEU79Z_G2X3-rd__U"/>
+<div class="flex flex-col gap-1.5 flex-1 pt-1">
+<p class="text-[#111618] dark:text-white text-base font-bold leading-tight">Beauty Palace</p>
+<div class="flex items-center gap-1 text-[#617c89] dark:text-white/70 text-sm font-normal leading-normal">
+<span class="material-symbols-outlined text-base text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (210+) ・ ~0.8 km ・ $$$</span>
+</div>
+</div>
+<button class="text-turquoise-primary pt-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-0 rounded-xl bg-white dark:bg-black/20 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none overflow-hidden">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" data-alt="A chic hair salon with minimalist decor and large mirrors." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4zMc3Mvz_L7XhKa8daPGcCQZFyYoAmv90A5QQKTLkcQSM686TXU8EDk0gABaeJ9A84r8xxx6IQiS65CeQoIHq2qyyVtkmnWDkVRkZdVEiQ9X6RXypG1N9aDMrKEuJ05G3pHr0e05IahdvsjlXRSerUoF25Mz5OyNR0b96OkOQoczuE3TbKzI7MgCGmIROBgGINoL0UKC34-2madnu2hWEXVNd0_xHDol-kSAh85GNvrKQrFYAFHaG5A20R8JcfqBAJbp-1fX7qB0");'></div>
+<div class="flex items-start justify-between gap-4 p-4">
+<img alt="The Hair Lab Logo" class="h-14 w-14 rounded-full object-cover border-2 border-white dark:border-gray-800 shadow-md -mt-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD8Oum6Uu4ydzzMdFZPASXtwWXhKApgqFwz-q2vTe2Db622JFxYQYA41qg4SN1vmSRdWLsGPOxFJOjHkRdBfnbCK1Inzr1D2xVSLs5k_357EfZNknfT66O-bYR4Lr_s3QFSh-ijn49eWVqVvfNh4lSgbnR9czSxOxWHVJcvHOFX22nVRO4-RiIG9IhrItdclH-Ca99Zl9OequlWRmsCkYHaG3NabuZnZvOIL6uJqG_hAE1nIf8JxLQbTF3o5-KOfrNU-1aT6t0ogA"/>
+<div class="flex flex-col gap-1.5 flex-1 pt-1">
+<p class="text-[#111618] dark:text-white text-base font-bold leading-tight">The Hair Lab</p>
+<div class="flex items-center gap-1 text-[#617c89] dark:text-white/70 text-sm font-normal leading-normal">
+<span class="material-symbols-outlined text-base text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7 (95+) ・ ~2.5 km ・ $$</span>
+</div>
+</div>
+<button class="text-[#111618] dark:text-white pt-1">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<nav class="sticky bottom-0 z-10 bg-white dark:bg-[#1C2930] border-t border-gray-200 dark:border-white/10 p-2">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center text-turquoise-primary w-1/5" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="text-xs font-medium">Keşfet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-xs font-medium">Randevular</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">palette</span>
+<span class="text-xs font-medium">Tasarımlar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-xs font-medium">Favorilerim</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-white/60 w-1/5" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profil</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

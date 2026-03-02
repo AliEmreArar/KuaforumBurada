@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anasayfa/Salon Listesi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#A6B9A8", // New Aqua Green
+              "background-light": "#f8fafc", // Clean White
+              "background-dark": "#18181b", // Dark Gray
+            },
+            fontFamily: {
+              display: ["Roboto", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem", // 12px
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="max-w-sm mx-auto min-h-screen flex flex-col">
+<header class="p-4 flex justify-between items-center bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<div class="flex items-center space-x-2">
+<span class="material-icons text-black dark:text-white">location_on</span>
+<h1 class="text-lg font-bold text-gray-800 dark:text-gray-100">Beşiktaş, istanbul</h1>
+</div>
+<span class="material-icons text-black dark:text-white text-3xl">map</span>
+</header>
+<main class="flex-grow px-4 pb-24">
+<div class="relative mb-4">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">search</span>
+<input class="w-full pl-10 pr-4 py-3 bg-gray-100 dark:bg-zinc-800 border-none rounded-lg text-gray-700 dark:text-gray-300 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-primary" placeholder="Bugün nerede parlıyorsun?" type="text"/>
+</div>
+<div class="flex space-x-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+<style>
+                .flex::-webkit-scrollbar { display: none; }
+            </style>
+<button class="flex-shrink-0 flex items-center bg-primary text-white px-4 py-2 rounded-lg font-medium">
+                Sıralama
+                <span class="material-icons text-sm ml-1">expand_more</span>
+</button>
+<button class="flex-shrink-0 flex items-center bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-200 px-4 py-2 rounded-lg font-medium shadow-sm">
+                Fiyat
+                <span class="material-icons text-sm ml-1">expand_more</span>
+</button>
+<button class="flex-shrink-0 flex items-center bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-200 px-4 py-2 rounded-lg font-medium shadow-sm">
+                Mesafe
+                <span class="material-icons text-sm ml-1">expand_more</span>
+</button>
+<button class="flex-shrink-0 flex items-center bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-200 px-4 py-2 rounded-lg font-medium shadow-sm">
+                Hizmet
+                <span class="material-icons text-sm ml-1">expand_more</span>
+</button>
+</div>
+<div class="flex space-x-2 mb-6 overflow-x-auto pb-2 -mx-4 px-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+<style>
+                .flex::-webkit-scrollbar { display: none; }
+            </style>
+<button class="flex-shrink-0 bg-primary text-white px-5 py-2 rounded-lg font-bold">KADIN</button>
+<button class="flex-shrink-0 bg-primary text-white px-5 py-2 rounded-lg font-bold">Tümü</button>
+<button class="flex-shrink-0 bg-white dark:bg-zinc-800 text-gray-800 dark:text-gray-100 px-5 py-2 rounded-lg font-bold shadow-sm">PİLATES</button>
+<button class="flex-shrink-0 bg-white dark:bg-zinc-800 text-gray-800 dark:text-gray-100 px-5 py-2 rounded-lg font-bold shadow-sm whitespace-nowrap">GÜZELLİK MERKEZLERİ</button>
+</div>
+<div class="space-y-4">
+<div class="bg-white dark:bg-zinc-800 rounded-2xl shadow-sm overflow-hidden">
+<div class="relative h-40 bg-gray-200 dark:bg-zinc-700 flex items-center justify-center">
+<span class="material-icons text-gray-400 dark:text-gray-500 text-5xl">image</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 text-white">
+<h3 class="font-bold text-lg">Tesettür Özel Kuaför</h3>
+<p class="text-sm">Yalnızca Bayan Personel Hizmet Vermektedir</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-800 rounded-2xl shadow-sm overflow-hidden">
+<img alt="Interior of a beautiful pink and gold beauty palace" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHCcEuvwoJBlXuEAe1w3rwdRIMMG9Ey7DwgbTpqFsxrfMXP8BK7Tx0d_BFNOvAwSwBGfeV2RcNir_u676rW9TpBZdGVUkmac-fiC-PqjXvBN8YOUU7ozMqSnnbujc_Oht2urvtrivxX2TH7gb_wApiRHFVSuqlOJc6zBRaIN9AgJPcs44AW-L9qSjNhfAboqHjajdhZYjIrjOxDIQ9pY4UKbz8fL_Mr1tXittpgBEPmfUw2SuZYw1oOjJFjjnZeWHcpj1FmH8iLqc"/>
+<div class="p-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Beauty Palace</h3>
+<div class="flex items-center text-gray-600 dark:text-gray-400 text-sm mt-1">
+<span class="material-icons text-yellow-500 text-base mr-1">star</span>
+<span class="font-medium text-gray-800 dark:text-gray-200">4.9</span>
+<span class="mx-1">(210+)</span>
+<span class="mx-1">·</span>
+<span>~0.8 km</span>
+<span class="mx-1">·</span>
+<span>$$$</span>
+</div>
+</div>
+<span class="material-icons text-primary text-3xl">favorite</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-800 rounded-2xl shadow-sm overflow-hidden">
+<img alt="Modern interior of The Hair Lab salon" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJxbF9Hwhe-WGXJzssiY2N17ShW-yhjhm_DsBUcoeC_IZBkdbowaKUb62k8ZOOfcb0ffdFBQy6IUDwO-BXAypDF30kADaAGHhei6zG2Q0tXdvxqu7TQejAYTsLTSVNeM2K5HC4kBeRWrRu_LXXfSk9YFUyI_xodbaMBd81k5I5JAvnFUPyQbhSMA2HWNykTT-FhVTIA0W81rvA5cx8174K14T-SpzV4Xgt4UEI5IZlHk1qNwPRg2jKx9C18Bi9-BdiPPv80ZMh47k"/>
+<div class="p-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">The Hair Lab</h3>
+<div class="flex items-center text-gray-600 dark:text-gray-400 text-sm mt-1">
+<span class="material-icons text-yellow-500 text-base mr-1">star</span>
+<span class="font-medium text-gray-800 dark:text-gray-200">4.7</span>
+<span class="mx-1">(95+)</span>
+<span class="mx-1">·</span>
+<span>~2.5 km</span>
+<span class="mx-1">·</span>
+<span>$$</span>
+</div>
+</div>
+<span class="material-icons text-gray-800 dark:text-gray-200 text-3xl">favorite_border</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 max-w-sm mx-auto bg-background-light dark:bg-zinc-900 border-t border-gray-200 dark:border-zinc-800">
+<div class="flex justify-around items-start pt-2 pb-1">
+<a class="flex flex-col items-center text-primary space-y-1" href="#">
+<div class="w-8 h-8 flex items-center justify-center bg-primary/20 rounded-full">
+<span class="material-icons text-primary">explore</span>
+</div>
+<span class="text-xs font-medium">Keşfet</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-icons">calendar_today</span>
+<span class="text-xs">Randevular</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-icons">palette</span>
+<span class="text-xs">Tasarımlar</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-icons">favorite_border</span>
+<span class="text-xs">Favorilerim</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-icons">campaign</span>
+<span class="text-xs">Kampanyalar</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400 space-y-1" href="#">
+<span class="material-icons">person_outline</span>
+<span class="text-xs">Profil</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

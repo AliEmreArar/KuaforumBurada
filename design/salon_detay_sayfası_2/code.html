@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Salon Detay Sayfası (Navigasyon Güncellendi - Kampanyalar ile)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#14b8a6", // Replaced #13a4ec with a turquoise shade
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-outlined.filled {
+      font-variation-settings: 'FILL' 1;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative min-h-screen w-full flex flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-20 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 justify-between">
+<button class="flex items-center justify-center size-10 rounded-full bg-white dark:bg-zinc-800 shadow-sm">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100">arrow_back</span>
+</button>
+<h2 class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Elysian Beauty</h2>
+<button class="flex items-center justify-center size-10 rounded-full bg-white dark:bg-zinc-800 shadow-sm">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-100">favorite_border</span>
+</button>
+</header>
+<main class="flex-grow pb-40">
+<div class="w-full h-64 bg-center bg-no-repeat bg-cover" data-alt="Interior of a modern and bright salon with styling chairs and large mirrors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFmEJjlOWSCxIeoHHdYNZ7vq4FMlgBCByr4SlWxhJHi8q6Ta6UqRLwLEu0rWlpYcOfw5SdkaroIFzxxJB2SuoHdcXL4N1HAcUID5useesH138GoxUrVaT08100kTgpVrW0K5X01seOEnckBtPizpayDMZWcwGDdzsNIaiGkO5r39EfK2Mhp2C-lsgjofxVVCQbvTBnYeHi82n6MnHGEGCIFCsF_8BvfvIKnpQ5JvQED1apsyitOJ8ShOgEiotEahe7FbRWpTnCeRM");'></div>
+<div class="bg-white dark:bg-zinc-900 p-6 rounded-b-xl shadow-sm">
+<h1 class="text-zinc-900 dark:text-zinc-100 tracking-tight text-3xl font-bold leading-tight">Elysian Beauty Salon</h1>
+<div class="flex items-center gap-4 mt-4">
+<div class="flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-zinc-700 dark:text-zinc-300 text-sm font-semibold">4.9 <span class="font-normal text-zinc-500 dark:text-zinc-400">(215 reviews)</span></p>
+</div>
+<div class="flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p class="text-zinc-700 dark:text-zinc-300 text-sm">Beşiktaş, Istanbul</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 p-6">
+<div class="flex flex-col items-center justify-center gap-2 p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary !text-3xl">schedule</span>
+<p class="text-zinc-700 dark:text-zinc-300 text-xs font-medium text-center">09:00 - 19:00</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary !text-3xl">call</span>
+<p class="text-zinc-700 dark:text-zinc-300 text-xs font-medium text-center">Contact</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary !text-3xl">directions</span>
+<p class="text-zinc-700 dark:text-zinc-300 text-xs font-medium text-center">Directions</p>
+</div>
+</div>
+<div class="px-6">
+<div class="flex bg-zinc-200/50 dark:bg-zinc-800 rounded-xl p-1.5">
+<button class="flex-1 py-2.5 text-sm font-semibold text-white bg-primary rounded-lg shadow">Services</button>
+<button class="flex-1 py-2.5 text-sm font-semibold text-zinc-600 dark:text-zinc-300">Portfolio</button>
+<button class="flex-1 py-2.5 text-sm font-semibold text-zinc-600 dark:text-zinc-300">Reviews</button>
+</div>
+</div>
+<div class="px-6 mt-6">
+<h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100 mb-4">Haircuts</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-sm">
+<div>
+<p class="font-semibold text-zinc-800 dark:text-zinc-200">Women's Haircut</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400 mt-1">60 min</p>
+</div>
+<div class="flex items-center gap-4">
+<p class="font-bold text-lg text-zinc-900 dark:text-zinc-100">450₺</p>
+<button class="flex items-center justify-center size-10 rounded-full bg-primary/20 dark:bg-primary/30 text-primary">
+<span class="material-symbols-outlined text-2xl">add</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-sm">
+<div>
+<p class="font-semibold text-zinc-800 dark:text-zinc-200">Men's Haircut</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400 mt-1">45 min</p>
+</div>
+<div class="flex items-center gap-4">
+<p class="font-bold text-lg text-zinc-900 dark:text-zinc-100">300₺</p>
+<button class="flex items-center justify-center size-10 rounded-full bg-primary/20 dark:bg-primary/30 text-primary">
+<span class="material-symbols-outlined text-2xl">add</span>
+</button>
+</div>
+</div>
+</div>
+<h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100 mt-8 mb-4">Coloring</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-white dark:bg-zinc-900 rounded-xl shadow-sm">
+<div>
+<p class="font-semibold text-zinc-800 dark:text-zinc-200">Full Color</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400 mt-1">120 min</p>
+</div>
+<div class="flex items-center gap-4">
+<p class="font-bold text-lg text-zinc-900 dark:text-zinc-100">1200₺</p>
+<button class="flex items-center justify-center size-10 rounded-full bg-primary/20 dark:bg-primary/30 text-primary">
+<span class="material-symbols-outlined text-2xl">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 z-20 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-t border-zinc-200 dark:border-zinc-800">
+<div class="p-4">
+<button class="w-full h-14 flex items-center justify-center rounded-xl bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30">Book Now</button>
+</div>
+<nav class="flex justify-around items-center h-16 border-t border-zinc-200 dark:border-zinc-800 px-2">
+<a class="flex flex-col items-center justify-center flex-1 text-primary" href="#">
+<span class="material-symbols-outlined filled">explore</span>
+<span class="text-[11px] font-medium mt-1">Keşfet</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-[11px] font-medium mt-1">Randevular</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">palette</span>
+<span class="text-[11px] font-medium mt-1">Tasarımlar</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-[11px] font-medium mt-1">Favorilerim</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="text-[11px] font-medium mt-1">Kampanyalar</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 text-zinc-500 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[11px] font-medium mt-1">Profil</span>
+</a>
+</nav>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Konum ve Hizmet Seçimi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#A6B9A8", // New Aqua Green
+                        "background-light": "#ffffff",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex items-center bg-primary p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-white dark:text-slate-200 flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</div>
+<h2 class="text-white dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Konum ve Hizmet Seçimi</h2>
+</div>
+<div class="flex flex-col p-4 gap-6 bg-slate-50 dark:bg-background-dark flex-grow">
+<div>
+<p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2 px-1">KONUMUNUZ</p>
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800/50 px-4 min-h-[72px] py-2 justify-between rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-800 dark:text-slate-100 text-base font-medium leading-normal line-clamp-1">Mevcut Konum</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">İstanbul, Kadıköy</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="text-slate-500 dark:text-slate-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-slate-800/50 p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-[2/1] bg-cover rounded-lg" data-alt="A modern and bright salon interior with comfortable chairs and mirrors." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp1F-zLKmF4BpqmuhvkTJHteBFkkHcXEY9R0MmC5NYI1k9pIaa45AwfNDQXGXJLC6VGrkOs7LOw72pHDA0XXE30NE1xKGIYL40FJksVEES5AOwoVBvj9R6YDDqhNFy5iIWdEIOKb2jXgQY8XYrW9HBSbBslM2U6djqZVfN3bARj1s3fx8rSAc8xd7tD4Ax3L5_tHZRWpu64DVPjger0VZJ8a3W1Qx-ndP-DWJ8N0lsRmQ761IWGj5G0yDNPR5SC8J_BngqX6qjMxg");'></div>
+<div class="flex items-start justify-between gap-4">
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-slate-900 dark:text-slate-50 text-base font-bold leading-tight">Salonda Randevu</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">En iyi salonlarda randevu alın.</p>
+</div>
+<div class="text-primary flex items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20 shrink-0 size-10">
+<span class="material-symbols-outlined text-xl">store</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-slate-800/50 p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-[2/1] bg-cover rounded-lg" data-alt="A cozy and comfortable living room setting where at-home services can be provided." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBA-KRJ8bonL7Fsi9KLtzQzOZKJa-EWWnsor4CFRU3oynqtgUUCZZ-7rg59yfE4tvvflOBos4SZyRjeaFSEddWlwte49nI50oTbqIz7mCZLmVGwllu4hOA9ucUbMh_qqf0NlAnMzQhnJEF2NrA2fsnb-wutO6QaFQCHyA5ffUAWKovYqxCtyPdKCBwYy3gtftfGJ09hVcFmwGMggLNwNfzdfLL8YhlO5WKFaVoYP-9S1ZOBGsUolTFrEAhAKENB6PcCcGaRlj5UtjE");'></div>
+<div class="flex items-start justify-between gap-4">
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-slate-900 dark:text-slate-50 text-base font-bold leading-tight">Evde Hizmet</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Evinizin konforunda hizmet alın.</p>
+</div>
+<div class="text-primary flex items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20 shrink-0 size-10">
+<span class="material-symbols-outlined text-xl">home_pin</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
